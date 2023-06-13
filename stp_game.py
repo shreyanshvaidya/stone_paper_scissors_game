@@ -21,31 +21,24 @@ while True:
         print("the game was a tie")
         tie +=1
     elif user_choice == "stone":
-        if computer_choice == "paper":
+        if computer_choice == "scissors":
             print("Congratulations,you won the game")
             user_score+=1
         elif computer_choice == "paper":
             print("ohh,you lose the game")
             computer_score+=1 
-    elif user_choice == "stone":
+    elif user_choice == "scissors":
         if computer_choice == "paper":
             print("Congratulations,you won the game")
             user_score+=1
         elif computer_choice == "scissors":
             print("ohh,you lose the game")
             computer_score+=1
-    elif user_choice == "scissors":
+    elif user_choice == "paper":
         if computer_choice == "stone":
             print("Congratulations,you won the game")
             user_score+=1
-        elif computer_choice == "paper":
-            print("ohh,you lose the game")
-            computer_score+=1
-    elif user_choice == "paper":
-        if computer_choice == "scissors":
-            print("Congratulations,you won the game")
-            user_score+=1
-        elif computer_choice == "stone":
+        elif computer_choice == "scissors":
             print("ohh,you lose the game")
             computer_score+=1
     else:
